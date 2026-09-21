@@ -3,9 +3,9 @@ import emailjs from '@emailjs/browser'
 import useInView from '../hooks/useInView'
 
 // ── Paste your EmailJS credentials here ──────────────────────────────────────
-const SERVICE_ID = 'YOUR_SERVICE_ID'
-const TEMPLATE_ID = 'YOUR_TEMPLATE_ID'
-const PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
+const SERVICE_ID = 'service_gr4exsa'
+const TEMPLATE_ID = 'template_xxjtzdv'
+const PUBLIC_KEY = '3vHwwwvJiwYnok-Ks'
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Contact() {
