@@ -60,14 +60,15 @@ export default function Hero() {
           <span className="cursor-blink">|</span>
         </div>
         <p className="landing-intro animate-fade-up" style={{ '--delay': '0.6s' }}>
-          Full Stack Developer with hands-on, end-to-end experience across the MERN stack, building responsive,
-          high-performance web applications from the ground up. I&apos;ve independently designed, integrated, and deployed 10+
-          RESTful APIs across 5+ production and academic projects, improving page load speed by up to 30% and enabling
-          real-time, scalable data handling. My foundation spans React.js, Redux Toolkit, Node.js, Express.js, and
-          MongoDB, backed by strong fundamentals in data structures, algorithms, and database schema design. I care about
-          writing clean, maintainable code and shipping products that actually work for the people using them. Currently
-          completing my B.Tech in Computer Science Engineering, I&apos;m looking to bring this full-stack skill set to a team
-          building reliable, scalable software.
+          Full Stack Developer with hands-on experience across the MERN stack and beyond, building responsive web
+          applications from the ground up. I&apos;ve designed and shipped projects including a school e-learning platform
+          (Apex Gurukul), a facial-recognition-based music recommender (Face Detection Music System), and a
+          backend-only e-commerce REST API (CommerceCore API) with MySQL transactions, Redis caching, and JWT auth.
+          My stack spans React.js, Node.js, Express.js, MongoDB, MySQL, and Redis, backed by strong fundamentals in
+          data structures, algorithms, and database schema design. I care about writing clean, maintainable code and
+          shipping products that actually work for the people using them. Currently completing my B.Tech in Computer
+          Science Engineering, I&apos;m looking to bring this full-stack skill set to a team building reliable, scalable
+          software.
         </p>
         <div className="landing-cta animate-fade-up" style={{ '--delay': '0.8s' }}>
           <a href="#about" className="btn btn-primary" onClick={e => handleNavClick(e, '#about')}>
@@ -87,7 +88,7 @@ export default function Hero() {
         </div>
         <div className="landing-socials">
           <a
-            href="https://github.com/Jai-ksprogrammer"
+            href="https://github.com/chandansharma07"
             target="_blank"
             rel="noopener"
             className="social-icon animate-pop"
