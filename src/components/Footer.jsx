@@ -7,7 +7,7 @@ export default function Footer() {
         <p className="footer-name">Chandan Kumar Sharma</p>
         <p className="footer-tagline">Building full-stack products, one deploy at a time.</p>
         <div className="footer-socials">
-          <a href="https://github.com/Jai-ksprogrammer" target="_blank" rel="noopener" aria-label="GitHub">
+          <a href="https://github.com/chandansharma07" target="_blank" rel="noopener" aria-label="GitHub">
             <i className="fab fa-github" />
           </a>
           <a href="https://linkedin.com/in/chandansharma07" target="_blank" rel="noopener" aria-label="LinkedIn">

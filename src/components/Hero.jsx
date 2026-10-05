@@ -96,7 +96,7 @@ export default function Hero() {
           <div className="hero-photo-wrapper">
             <div className="hero-photo-offset" aria-hidden="true" />
             <img
-              src={assetUrl('/images/profilePicture/MePic.webp')}
+              src={assetUrl('/images/profilePicture/1750410526290 (1).jpg')}
               alt="Chandan Kumar Sharma — Full Stack Developer"
               className="hero-photo"
               loading="eager"

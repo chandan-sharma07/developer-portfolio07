@@ -10,11 +10,7 @@ export default function Education() {
           My <span className="accent">Education</span>
         </h2>
         <div className="edu-grid">
-          <div
-            className={`edu-card reveal-down${visible ? ' visible' : ''}`}
-            onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 0 0 2px #00b4ff, 0 20px 50px rgba(0,180,255,0.15)' }}
-            onMouseLeave={e => { e.currentTarget.style.boxShadow = '' }}
-          >
+          <div className={`edu-card reveal-down${visible ? ' visible' : ''}`}>
             <div className="edu-icon-wrap">
               <i className="fas fa-graduation-cap edu-cap" />
             </div>

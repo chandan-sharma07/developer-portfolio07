@@ -83,12 +83,12 @@ export default function Contact() {
                 {status === 'sending' ? 'Sending…' : 'Send Message'}
               </button>
               {status === 'success' && (
-                <p style={{ color: '#00b4ff', marginTop: '1rem', fontWeight: 600 }}>
+                <p style={{ color: '#4ade80', marginTop: '1rem', fontWeight: 600 }}>
                   ✓ Message sent successfully!
                 </p>
               )}
               {status === 'error' && (
-                <p style={{ color: '#ff4d4d', marginTop: '1rem' }}>
+                <p style={{ color: '#ef4444', marginTop: '1rem' }}>
                   ✗ Something went wrong. Please try again.
                 </p>
               )}
@@ -134,7 +134,7 @@ export default function Contact() {
                 <i className="fab fa-linkedin-in" />
               </a>
               <a
-                href="https://github.com/Jai-ksprogrammer"
+                href="https://github.com/chandansharma07"
                 target="_blank"
                 rel="noopener"
                 className="contact-social-btn"

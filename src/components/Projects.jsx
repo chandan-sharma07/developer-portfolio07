@@ -3,16 +3,15 @@ import useInView from '../hooks/useInView'
 const PROJECTS = [
   {
     num: '01',
-    type: 'Full-Stack Web App',
+    type: 'Frontend Project',
     title: 'Apex Gurukul School Website',
-    desc: 'A full-stack e-commerce/e-learning platform listing 100+ products, built end-to-end with a custom REST API backend and MongoDB schema design for real-time data handling.',
+    desc: 'A fully responsive 7-page school website built with React.js, with client-side routing and a reusable component-based UI.',
     outcomes: [
-      'Independently designed and built backend REST APIs with Node.js and Express.js',
-      'Designed MongoDB schemas to support real-time data handling at scale',
-      'Implemented Redux Toolkit for centralized state management, cutting prop-drilling',
-      'Delivered a 100% mobile-optimized, cross-device interface for consistent UX',
+      'Delivered a 7-page website with client-side routing using React Router DOM',
+      'Built a reusable, component-based UI system with React-Bootstrap, consistent across all breakpoints',
+      'Deployed on Vercel',
     ],
-    tech: ['React.js', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'Bootstrap'],
+    tech: ['React.js', 'React Router DOM', 'React-Bootstrap'],
     revealClass: 'reveal-left',
     links: {
       live: 'https://ninecodedot.vercel.app',
@@ -21,16 +20,15 @@ const PROJECTS = [
   },
   {
     num: '02',
-    type: 'Full-Stack Web App',
+    type: 'Frontend + API Project',
     title: 'Face Detection Music System',
-    desc: 'A responsive React.js application that recommends music in real time based on facial-recognition input, integrating multiple REST APIs for fast, interactive recommendations.',
+    desc: 'A responsive React.js application that recommends music based on facial-expression input, with REST API endpoints for matching tracks and JWT-based user authentication.',
     outcomes: [
-      'Engineered a fully responsive React.js interface, boosting UI/UX quality and page load speed by 30%',
-      'Integrated 5 REST APIs to power real-time facial-recognition-based music recommendations',
-      'Cut data-retrieval latency, increasing overall page interactivity',
-      'Built a reusable component architecture to simplify future feature additions',
+      'Designed REST API endpoints to process real-time facial-expression data and return matched tracks',
+      'Implemented JWT-based authentication covering login and signup flows for personalized, session-based access',
+      'Built a responsive React.js interface with Framer Motion animations',
     ],
-    tech: ['React.js', 'JavaScript (ES6+)', 'REST APIs', 'CSS3', 'Framer Motion'],
+    tech: ['React.js', 'REST APIs', 'JWT', 'Framer Motion'],
     revealClass: 'reveal-right',
     links: {
       live: 'https://mood-melodies-pi.vercel.app',
@@ -41,14 +39,18 @@ const PROJECTS = [
     num: '03',
     type: 'Backend Project',
     title: 'CommerceCore API',
-    desc: 'A backend-only REST API for an e-commerce system, using MySQL for transactional data (orders, payments) and MongoDB for a flexible product catalog, following a layered routes-services-repositories architecture.',
+    desc: 'A production-style backend-only REST API for a mini e-commerce system, built with a layered routes-services-repositories architecture across two databases: MySQL for transactional data (orders, payments) and MongoDB for a flexible product catalog, with Redis caching, JWT auth, and integration tests.',
     outcomes: [
-      'Implemented order placement as an ACID-safe MySQL transaction, validating stock and rolling back atomically on failure to prevent inconsistent orders',
-      'Added idempotency-key handling to prevent duplicate orders from retried requests',
-      'Built JWT authentication with short-lived access tokens and rotating refresh tokens, plus role-based access control',
-      'Added Redis caching on product listings with automatic cache invalidation on product updates',
+      'Designed a dual-database architecture: MySQL for relational order/payment integrity, MongoDB for a flexible product catalog with pagination, filtering, and text search',
+      'Implemented order placement as an ACID-safe MySQL transaction, validating stock and rolling back atomically on failure to prevent partial or inconsistent orders',
+      'Added idempotency-key handling on the order endpoint to prevent duplicate orders from retried or duplicate requests',
+      'Built JWT authentication with short-lived access tokens, rotating refresh tokens, and role-based access control for admin and customer routes',
+      'Added a review and rating system with automatic average-rating recalculation on every review add, update, or delete',
+      'Added Redis caching on product listings with query-based cache keys and automatic invalidation on product updates',
+      'Hardened the API with centralized error handling, Zod request validation, rate limiting, and structured Winston logging with per-request tracing',
+      'Wrote integration tests with Jest and Supertest covering auth flows, transaction rollback, idempotency, and concurrent order placement; documented all endpoints with Swagger and containerized the full stack with Docker Compose',
     ],
-    tech: ['Node.js', 'Express.js', 'MySQL', 'MongoDB', 'Redis', 'Docker', 'Jest'],
+    tech: ['Node.js', 'Express.js', 'MySQL', 'MongoDB', 'Redis', 'JWT', 'Docker', 'Jest'],
     revealClass: 'reveal-left',
     links: {
       github: 'https://github.com/chandansharma07/commercecore-api',
@@ -75,25 +77,40 @@ export default function Projects() {
               <div className="project-right-panel">
                 <h3 className="project-title">{title}</h3>
                 <p className="project-desc">{desc}</p>
-                <div className="project-outcomes">
-                  {outcomes.map((o, i) => (
-                    <div key={i} className="outcome-item">
-                      <span className="outcome-num">{i + 1}</span>
-                      <p>{o}</p>
-                    </div>
-                  ))}
+                <div className="project-outcomes-wrap">
+                  <h4 className="project-outcomes-heading">Key Implementation &amp; Outcomes</h4>
+                  <ul className="project-outcomes">
+                    {outcomes.map((o, i) => (
+                      <li key={i} className="outcome-item">
+                        <span className="outcome-bullet" aria-hidden="true" />
+                        <span className="outcome-text">{o}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 <div className="tech-tags">
-                  {tech.map(t => <span key={t} className="tech-pill">{t}</span>)}
+                  {tech.map(t => (
+                    <span key={t} className="tech-pill">{t}</span>
+                  ))}
                 </div>
-                <div className="project-links" style={{ marginTop: '1rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <div className="project-links">
                   {links?.live && (
-                    <a href={links.live} target="_blank" rel="noopener" className="btn btn-outline btn-sm">
+                    <a
+                      href={links.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-sm"
+                    >
                       <i className="fas fa-external-link-alt" /> Live Demo
                     </a>
                   )}
                   {links?.github && (
-                    <a href={links.github} target="_blank" rel="noopener" className="btn btn-outline btn-sm">
+                    <a
+                      href={links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-sm"
+                    >
                       <i className="fab fa-github" /> GitHub
                     </a>
                   )}
