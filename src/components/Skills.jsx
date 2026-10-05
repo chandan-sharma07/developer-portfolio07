@@ -2,6 +2,19 @@ import useInView from '../hooks/useInView'
 
 const SKILL_GROUPS = [
   {
+    category: 'Frontend',
+    icon: 'fas fa-code',
+    items: [
+      'React.js',
+      'Redux Toolkit',
+      'TypeScript',
+      'JavaScript (ES6+)',
+      'HTML5',
+      'CSS3',
+      'Tailwind CSS',
+    ],
+  },
+  {
     category: 'Backend & APIs',
     icon: 'fas fa-server',
     items: [
@@ -19,19 +32,6 @@ const SKILL_GROUPS = [
       'MySQL (Sequelize)',
       'MongoDB (Mongoose)',
       'Redis',
-    ],
-  },
-  {
-    category: 'Frontend',
-    icon: 'fas fa-code',
-    items: [
-      'React.js',
-      'Redux Toolkit',
-      'TypeScript',
-      'JavaScript (ES6+)',
-      'HTML5',
-      'CSS3',
-      'Tailwind CSS',
     ],
   },
   {

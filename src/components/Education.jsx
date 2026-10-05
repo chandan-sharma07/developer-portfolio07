@@ -7,30 +7,36 @@ export default function Education() {
     <section id="education" className="section edu-section" ref={ref}>
       <div className="container">
         <h2 className={`section-title reveal${visible ? ' visible' : ''}`}>
-          My <span className="accent">Education</span>
+          Education &amp; <span className="accent">Activities</span>
         </h2>
         <div className="edu-grid">
-          <div className={`edu-card reveal-down${visible ? ' visible' : ''}`}>
+          {/* Education Card */}
+          <div className={`edu-card reveal-left${visible ? ' visible' : ''}`}>
             <div className="edu-icon-wrap">
               <i className="fas fa-graduation-cap edu-cap" />
             </div>
             <div className="edu-body">
-              <h3 className="edu-degree">B.Tech in Computer Science Engineering (CSE)</h3>
+              <h3 className="edu-degree">B.Tech, Computer Science Engineering</h3>
               <p className="edu-inst">
-                <i className="fas fa-university" /> Prestige Institute of Management &amp; Research, Bhopal (RGPV)
+                Prestige Institute of Management &amp; Research, Bhopal (RGPV)
               </p>
-              <div className="edu-meta">
-                <span><i className="fas fa-calendar-alt" /> 2022 – 2026</span>
-                <span><i className="fas fa-clock" /> Full-time</span>
+              <div className="edu-meta-tags">
+                <span className="about-tag">Completed 2026</span>
+                <span className="about-tag">CGPA 7.42</span>
               </div>
-              <div className="edu-highlights">
-                <h4>Key Highlights</h4>
-                <ul>
-                  <li className="edu-bullet">Core focus on Data Structures &amp; Algorithms and problem solving</li>
-                  <li className="edu-bullet">Practical, project-based learning across full-stack web development (MERN)</li>
-                  <li className="edu-bullet">Built and deployed multiple end-to-end applications alongside coursework</li>
-                </ul>
-              </div>
+            </div>
+          </div>
+
+          {/* Activities Block */}
+          <div className={`edu-card edu-activity-card reveal-right${visible ? ' visible' : ''}`}>
+            <div className="edu-icon-wrap">
+              <i className="fas fa-hands-helping edu-cap" />
+            </div>
+            <div className="edu-body">
+              <h3 className="edu-degree">NSS Volunteer (2024-2026)</h3>
+              <p className="edu-activity-desc">
+                Coordinated community outreach programs for 100+ participants.
+              </p>
             </div>
           </div>
         </div>
