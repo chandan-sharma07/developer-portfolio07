@@ -13,7 +13,8 @@ export default function Hero() {
   }
 
   return (
-    <section id="landing" className="hero">
+    <section className="hero" id="home">
+      <span id="landing" style={{ position: 'absolute', top: 0, pointerEvents: 'none' }} />
       <div className="hero-inner">
         {/* ── Left column: text ── */}
         <div className="hero-text">
