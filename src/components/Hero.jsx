@@ -30,7 +30,9 @@ export default function Hero() {
           </p>
 
           <p className="hero-intro hero-fade" style={{ '--i': 3 }}>
-            I build full-stack web applications using React.js, Node.js, Express.js, MongoDB, MySQL and Redis. My key projects include Face Detection Music System, Apex Gurukul School Website, and CommerceCore API (backend). I enjoy building practical projects and solving real-world problems through thoughtful frontend and backend development.
+            I build full-stack web applications using React.js, Node.js, Express.js,
+            MongoDB, MySQL and Redis. My projects include Face Detection Music
+            System, Apex Gurukul School Website, and CommerceCore API (backend).
           </p>
 
           <div className="hero-buttons hero-fade" style={{ '--i': 4 }}>
