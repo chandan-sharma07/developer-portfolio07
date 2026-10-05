@@ -4,7 +4,7 @@ import useInView from '../hooks/useInView'
 const STATS = [
   { target: 4, label: 'Industry Certifications', plus: true },
   { target: 15, label: 'GitHub Repositories', plus: true },
-  { target: 2, label: 'Featured Projects', plus: false },
+  { target: 3, label: 'Featured Projects', plus: false },
   { target: 1, label: 'Awards / Recognitions', plus: false },
 ]
 

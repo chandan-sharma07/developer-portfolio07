@@ -26,16 +26,11 @@ export default function Hero() {
           </h1>
 
           <p className="hero-role hero-fade" style={{ '--i': 2 }}>
-            Final Year B.Tech CSE &nbsp;|&nbsp; Backend / Full Stack Developer
+            B.Tech CSE (2026) | Backend / Full Stack Developer
           </p>
 
           <p className="hero-intro hero-fade" style={{ '--i': 3 }}>
-            I build full-stack web applications using React.js, Node.js,
-            Express.js, MongoDB, MySQL and Redis. My key projects include Face
-            Detection Music System, Apex Gurukul School Website, and CommerceCore
-            API (backend), where I have worked on real-world features like
-            authentication, API integration, database design and responsive user
-            interfaces.
+            I build full-stack web applications using React.js, Node.js, Express.js, MongoDB, MySQL and Redis. My key projects include Face Detection Music System, Apex Gurukul School Website, and CommerceCore API (backend). I enjoy building practical projects and solving real-world problems through thoughtful frontend and backend development.
           </p>
 
           <div className="hero-buttons hero-fade" style={{ '--i': 4 }}>
@@ -59,7 +54,7 @@ export default function Hero() {
 
           <div className="hero-status hero-fade" style={{ '--i': 5 }}>
             <span className="hero-status-dot" aria-hidden="true" />
-            Open to opportunities
+            Open to Opportunities
           </div>
 
           <div className="hero-socials hero-fade" style={{ '--i': 6 }}>
