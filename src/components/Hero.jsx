@@ -36,25 +36,6 @@ export default function Hero() {
             System, Apex Gurukul School Website, and CommerceCore API (backend).
           </p>
 
-          <div className="hero-buttons hero-fade" style={{ '--i': 4 }}>
-            <a
-              href={assetUrl('/downloads/Resume_FullStackDeveloper.pdf')}
-              target="_blank"
-              rel="noopener"
-              download="Chandan_Resume.pdf"
-              className="hero-btn hero-btn-primary"
-            >
-              <i className="fas fa-download" /> Download Resume
-            </a>
-            <a
-              href="#contact"
-              className="hero-btn hero-btn-ghost"
-              onClick={e => handleNavClick(e, '#contact')}
-            >
-              Contact Me
-            </a>
-          </div>
-
           <div className="hero-status hero-fade" style={{ '--i': 5 }}>
             <span className="hero-status-dot" aria-hidden="true" />
             Open to Opportunities
