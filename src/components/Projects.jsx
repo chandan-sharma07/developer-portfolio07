@@ -15,7 +15,7 @@ const PROJECTS = [
     revealClass: 'reveal-left',
     links: {
       live: 'https://ninecodedot.vercel.app',
-      github: 'https://github.com/chandansharma07/apex-gurukul',
+      github: 'https://github.com/chandan-sharma07/playSchool',
     },
   },
   {
@@ -32,7 +32,7 @@ const PROJECTS = [
     revealClass: 'reveal-right',
     links: {
       live: 'https://mood-melodies-pi.vercel.app',
-      github: 'https://github.com/chandansharma07/mood-melodies',
+      github: 'https://github.com/chandan-sharma07/Mood-Melodies',
     },
   },
   {
@@ -53,7 +53,7 @@ const PROJECTS = [
     tech: ['Node.js', 'Express.js', 'MySQL', 'MongoDB', 'Redis', 'JWT', 'Docker', 'Jest'],
     revealClass: 'reveal-left',
     links: {
-      github: 'https://github.com/chandansharma07/commercecore-api',
+      github: 'https://github.com/chandan-sharma07/commercecore-api',
     },
   },
 ]

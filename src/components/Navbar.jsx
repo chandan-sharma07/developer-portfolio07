@@ -65,7 +65,7 @@ export default function Navbar() {
             ))}
             <li className="nav-resume-item">
               <a
-                href={assetUrl('/downloads/Resume_FullStackDeveloper.pdf')}
+                href={assetUrl('/portfolio-react/public/downloads/Resume.pdf')}
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Chandan_Resume.pdf"
@@ -77,7 +77,7 @@ export default function Navbar() {
           </ul>
 
           <a
-            href={assetUrl('/downloads/Resume_FullStackDeveloper.pdf')}
+            href={assetUrl('/portfolio-react/public/downloads/Resume.pdf')}
             target="_blank"
             rel="noopener noreferrer"
             download="Chandan_Resume.pdf"

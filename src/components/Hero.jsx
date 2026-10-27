@@ -43,7 +43,7 @@ export default function Hero() {
 
           <div className="hero-socials hero-fade" style={{ '--i': 6 }}>
             <a
-              href="https://github.com/chandansharma07"
+              href="https://github.com/chandan-sharma07/chandan-sharma07"
               target="_blank"
               rel="noopener"
               className="hero-social-icon"
