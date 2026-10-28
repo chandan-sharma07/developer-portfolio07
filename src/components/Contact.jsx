@@ -205,12 +205,12 @@ export default function Contact() {
                 <div>
                   <p className="contact-label">GitHub</p>
                   <a
-                    href="https://github.com/chandan-sharma07/chandan-sharma07"
+                    href="https://github.com/chandan-sharma07"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="contact-val"
                   >
-                    https://github.com/chandan-sharma07/
+                    github.com/chandan-sharma07
                   </a>
                 </div>
               </div>

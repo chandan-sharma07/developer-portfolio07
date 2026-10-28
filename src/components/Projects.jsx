@@ -53,7 +53,7 @@ const PROJECTS = [
     tech: ['Node.js', 'Express.js', 'MySQL', 'MongoDB', 'Redis', 'JWT', 'Docker', 'Jest'],
     revealClass: 'reveal-left',
     links: {
-      github: 'https://github.com/chandan-sharma07/commercecore-api',
+      github: 'https://github.com/chandan-sharma07/CommerceCore-API',
     },
   },
 ]
